@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
-
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun 17 20:06:45 2022
+# Make data base, printed on Fri Jun 17 20:48:59 2022
 
 # Variables
 
@@ -229,9 +227,9 @@ VSCODE_PID = 80258
 
 # Directories
 
-# . (device 2053, inode 4197470): 9 files, no impossibilities.
+# . (device 2053, inode 4197470): 10 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -254,17 +252,17 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-17 20:05:51.068713369
+#  Last modified 2022-06-17 20:48:59.084582763
 #  File has been updated.
 #  Successfully updated.
 
-test: VulkanTest
+test: CppVoxelEngine
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 9):
-	./VulkanTest
+	./CppVoxelEngine
 
 # Not a target:
 main.cpp:
@@ -281,33 +279,41 @@ main.cpp:
 clean:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
- 
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 12):
-	rm -f VulkanTest
+	rm -f CppVoxelEngine
 
-VulkanTest: main.cpp
+# Not a target:
+CppVoxelEngine:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
+
+VulkanTest: main.cpp
+#  Implicit rule search has not been done.
+ 
+make: *** No rule to make target 'all'.  Stop.
+
+#  Modification time never checked.
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 4):
-	g++ $(CFLAGS) -o VulkanTest main.cpp $(LDFLAGS)
+	g++ $(CFLAGS) -o CppVoxelEngine main.cpp $(LDFLAGS)
 
 # files hash-table stats:
-# Load=9/1024=1%, Rehash=0, Collisions=0/25=0%
+# Load=10/1024=1%, Rehash=0, Collisions=0/26=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 18 / storage = 149 B / avg = 8 B
-# current buf: size = 8162 B / used = 149 B / count = 18 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 19 / storage = 164 B / avg = 8 B
+# current buf: size = 8162 B / used = 164 B / count = 19 / avg = 8 B
 
-# strcache performance: lookups = 30 / hit rate = 40%
+# strcache performance: lookups = 31 / hit rate = 38%
 # hash-table stats:
-# Load=18/8192=0%, Rehash=0, Collisions=1/30=3%
-# Finished Make data base on Fri Jun 17 20:06:45 2022
+# Load=19/8192=0%, Rehash=0, Collisions=1/31=3%
+# Finished Make data base on Fri Jun 17 20:48:59 2022
 
  
