@@ -1,5 +1,5 @@
 make --dry-run --keep-going --print-directory
 make: Entering directory '/home/luciferin/git-repos/cpp-voxel-engine'
-make: 'VulkanTest' is up to date.
+g++ -std=c++17 -O2 -o CppVoxelEngine main.cpp -lglfw -lvulkan -ldl -lpthread -lX11 -lXxf86vm -lXrandr -lXi
 make: Leaving directory '/home/luciferin/git-repos/cpp-voxel-engine'
  

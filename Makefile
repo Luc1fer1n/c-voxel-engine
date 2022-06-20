@@ -8,5 +8,5 @@ VulkanTest: main.cpp
 test: CppVoxelEngine
 	./CppVoxelEngine
 
-clean:
+clean: test
 	rm -f CppVoxelEngine

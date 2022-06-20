@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun 17 20:48:59 2022
+# Make data base, printed on Sat Jun 18 13:33:11 2022
 
 # Variables
 
@@ -227,9 +229,9 @@ VSCODE_PID = 80258
 
 # Directories
 
-# . (device 2053, inode 4197470): 10 files, no impossibilities.
+# . (device 2053, inode 4197470): 9 files, no impossibilities.
 
-# 10 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -252,7 +254,7 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-17 20:48:59.084582763
+#  Last modified 2022-06-18 13:33:00.98460155
 #  File has been updated.
 #  Successfully updated.
 
@@ -276,9 +278,10 @@ main.cpp:
 #  Modification time never checked.
 #  File has not been updated.
 
-clean:
+clean: test
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
+ 
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 12):
@@ -292,16 +295,13 @@ CppVoxelEngine:
 
 VulkanTest: main.cpp
 #  Implicit rule search has not been done.
- 
-make: *** No rule to make target 'all'.  Stop.
-
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 4):
 	g++ $(CFLAGS) -o CppVoxelEngine main.cpp $(LDFLAGS)
 
 # files hash-table stats:
-# Load=10/1024=1%, Rehash=0, Collisions=0/26=0%
+# Load=10/1024=1%, Rehash=0, Collisions=0/27=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -314,6 +314,6 @@ make: *** No rule to make target 'all'.  Stop.
 # strcache performance: lookups = 31 / hit rate = 38%
 # hash-table stats:
 # Load=19/8192=0%, Rehash=0, Collisions=1/31=3%
-# Finished Make data base on Fri Jun 17 20:48:59 2022
+# Finished Make data base on Sat Jun 18 13:33:11 2022
 
  
